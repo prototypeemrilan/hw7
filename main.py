@@ -57,8 +57,5 @@ class Human2(Human):
             Human2.car(self)
         elif a == 5:
             Human2.__orientation(self)
-
-
-
 w = Human2('Mirdjalalydin', 23)
 w.wh()
