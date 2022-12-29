@@ -38,24 +38,26 @@ class Human2(Human):
 
     def wh(self):
         while True:
-            Human2.aldik(self)
-    def aldik(self):
-        print(f'1-возраст\n'
-              f'2-имя\n'
-              f'3-дата рождения\n'
-              f'4-машина\n'
-              f'5-ориентация\n'
-              f'6-выход')
-        a = int(input('Введите число: '))
-        if a == 1:
-            Human2.emka(self)
-        elif a == 2:
-            Human2.dancho_bratan(self)
-        elif a == 3:
-            Human2.year(self)
-        elif a == 4:
-            Human2.car(self)
-        elif a == 5:
-            Human2.__orientation(self)
+            print(f'1-возраст\n'
+                  f'2-имя\n'
+                  f'3-дата рождения\n'
+                  f'4-машина\n'
+                  f'5-ориентация\n'
+                  f'6-выход')
+            a = int(input('Введите число: '))
+            if a == 1:
+                Human2.emka(self)
+            elif a == 2:
+                Human2.dancho_bratan(self)
+            elif a == 3:
+                Human2.year(self)
+            elif a == 4:
+                Human2.car(self)
+            elif a == 5:
+                Human2.__orientation(self)
+            elif a == 6:
+                break
+            else:
+                print('Ошибка')
 w = Human2('Mirdjalalydin', 23)
 w.wh()
